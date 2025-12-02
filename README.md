@@ -1,1 +1,2 @@
-# 2Souls
+# Documentation
+
