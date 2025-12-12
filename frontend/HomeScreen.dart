@@ -7,10 +7,10 @@ class HomeScreen expands StatelessWidget {
 widget build(BuildContext context) {
 	return Scaffold(
 	appBar: AppBar(
-		title:const Text('My App'),
+		title:const Text('2Souls'),
 		),
 		body: const Centre(
-			child: Text('Welcome to my app!'),
+			child: Text('Welcome Back user'),
 			), //centre
 		), //scaffold
 	}
