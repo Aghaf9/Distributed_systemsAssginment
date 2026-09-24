@@ -1,0 +1,686 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "../protos/TexturedBarrier.proto"
+
+WorldInfo {
+  info [
+    "3006ICT Group Project final environment"
+    "B1-B5: four different non-target images on four vertical faces"
+    "4 boundary + 4 interior observation stations"
+    "Webots Camera Recognition ground truth is not used"
+  ]
+  title "3006ICT Training Start A"
+}
+Viewpoint {
+  orientation 0.21251501407617218 -0.0037194540047601502 -0.9771507224855902 3.1757803469679384
+  position 3.2363511260530236 1.0644740437400493 0.8130390064123141
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4 4
+  wallThickness 0.04
+  wallHeight 0.18
+}
+Solid {
+  translation 0 0.2 0
+  children [
+    Pose {
+      translation 0 0 0.12
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.31 0.32 0.34
+            roughness 0.9
+            metalness 0
+          }
+          geometry Box {
+            size 0.22 0.85 0.24
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.43 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/banana_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.43 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/soccer_ball_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.115 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/keyboard_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.115 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/teddy_bear_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+  ]
+  name "B1"
+  boundingObject Pose {
+    translation 0 0 0.12
+    children [
+      Box {
+        size 0.22 0.85 0.24
+      }
+    ]
+  }
+  locked TRUE
+}
+Solid {
+  translation -0.95 0.45 0
+  children [
+    Pose {
+      translation 0 0 0.12
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.31 0.32 0.34
+            roughness 0.9
+            metalness 0
+          }
+          geometry Box {
+            size 0.22 0.75 0.24
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.38 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/toaster_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.38 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/books_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.115 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/plant_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.115 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/landscape_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+  ]
+  name "B2"
+  boundingObject Pose {
+    translation 0 0 0.12
+    children [
+      Box {
+        size 0.22 0.75 0.24
+      }
+    ]
+  }
+  locked TRUE
+}
+Solid {
+  translation 0.95 -0.55 0
+  children [
+    Pose {
+      translation 0 0 0.12
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.31 0.32 0.34
+            roughness 0.9
+            metalness 0
+          }
+          geometry Box {
+            size 0.22 0.75 0.24
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.38 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/monitor_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.38 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/chair_a.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.115 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/banana_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.115 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/soccer_ball_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+  ]
+  name "B3"
+  boundingObject Pose {
+    translation 0 0 0.12
+    children [
+      Box {
+        size 0.22 0.75 0.24
+      }
+    ]
+  }
+  locked TRUE
+}
+Solid {
+  translation 0.5 1.05 0
+  children [
+    Pose {
+      translation 0 0 0.12
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.31 0.32 0.34
+            roughness 0.9
+            metalness 0
+          }
+          geometry Box {
+            size 0.8 0.22 0.24
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.115 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/keyboard_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.115 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/umbrella_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.405 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/teddy_bear_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.405 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/toaster_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+  ]
+  name "B4"
+  boundingObject Pose {
+    translation 0 0 0.12
+    children [
+      Box {
+        size 0.8 0.22 0.24
+      }
+    ]
+  }
+  locked TRUE
+}
+Solid {
+  translation -0.5 -1.05 0
+  children [
+    Pose {
+      translation 0 0 0.12
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.31 0.32 0.34
+            roughness 0.9
+            metalness 0
+          }
+          geometry Box {
+            size 0.8 0.22 0.24
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 -0.115 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/monitor_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.115 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/plant_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.15 0.006 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.405 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/books_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.405 0 0.1248
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "../textures/distractors/chair_b.png"
+              ]
+              repeatS FALSE
+              repeatT FALSE
+            }
+            roughness 0.85
+            metalness 0
+          }
+          geometry Box {
+            size 0.006 0.15 0.15
+          }
+        }
+      ]
+    }
+  ]
+  name "B5"
+  boundingObject Pose {
+    translation 0 0 0.12
+    children [
+      Box {
+        size 0.8 0.22 0.24
+      }
+    ]
+  }
+  locked TRUE
+}
+TexturedBarrier {
+  translation -1.75 1.25 0
+  rotation 0 0 1 1.570796
+  name "station_S1"
+}
+TexturedBarrier {
+  translation -0.65 0.9 0
+  name "station_S2"
+  textureUrl [
+    "../textures/target_coffee_mug.png"
+  ]
+}
+TexturedBarrier {
+  translation 1.15 1.75 0
+  name "station_S3"
+  textureUrl [
+    "../textures/target_backpack.png"
+  ]
+}
+TexturedBarrier {
+  translation 0.7 0.45 0
+  rotation 0 0 1 -1.570796
+  name "station_S4"
+  textureUrl [
+    "../textures/target_fire_extinguisher.png"
+  ]
+}
+TexturedBarrier {
+  translation 1.75 -0.55 0
+  rotation 0 0 1 -1.570796
+  name "station_S5"
+  textureUrl [
+    "../textures/target_camera.png"
+  ]
+}
+TexturedBarrier {
+  translation 0.55 -1.15 0
+  rotation 0 0 1 3.141593
+  name "station_S6"
+  textureUrl [
+    "../textures/target_running_shoe.png"
+  ]
+}
+TexturedBarrier {
+  translation -0.95 -1.75 0
+  rotation 0 0 1 3.141593
+  name "station_S7"
+  textureUrl [
+    "../textures/target_headphones.png"
+  ]
+}
+TexturedBarrier {
+  translation -1.2 -0.45 0
+  rotation 0 0 1 1.570796
+  name "station_S8"
+  textureUrl [
+    "../textures/target_wall_clock.png"
+  ]
+}
+E-puck {
+  hidden position_0_0 -4.29103758211355e-07
+  hidden position_0_1 2.1202592347554717e-07
+  hidden linearVelocity_0 1.3877299607604885e-15 -1.6037794473400499e-15 4.7369515717340015e-17
+  hidden angularVelocity_0 1.1345187435175857e-14 8.916508890375544e-23 2.572732785105712e-22
+  hidden rotation_1 0 -0.9999999999999999 0 4.2878075152451354e-07
+  hidden linearVelocity_1 -1.628883490936312e-20 -1.0937475786897909e-15 -3.108624768515551e-16
+  hidden angularVelocity_1 -2.8548592055372437e-13 -1.1228553370878715e-21 2.570686929353882e-22
+  hidden rotation_2 0 1 0 2.1283115233608642e-07
+  hidden linearVelocity_2 -1.630048523782542e-20 -2.2070767627382697e-15 7.549519928343249e-16
+  hidden angularVelocity_2 2.1751308232605713e-13 -1.7183299376359603e-21 2.57296064028312e-22
+  translation 1.1685499559377228 1.0703599854934989 -6.396199578900981e-05
+  rotation -5.258094534215204e-15 1.2215888321460466e-09 1 -3.1415926532195955
+  controller "group_project_controller"
+  window "<generic>"
+  camera_width 160
+  camera_height 120
+  camera_rotation 0 1 0 -0.3926996938995747
+  distance_sensor_numberOfRays 3
+  turretSlot [
+    GPS {
+    }
+    InertialUnit {
+      name "imu"
+    }
+  ]
+}
